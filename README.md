@@ -82,7 +82,6 @@ Then configure the environment variables:
 ```env
 LLM_API_KEY=your_api_key_here
 LLM_MODEL=your_model_name
-LLM_API_BASE=
 ```
 
 `LLM_API_BASE` is optional.
