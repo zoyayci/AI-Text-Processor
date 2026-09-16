@@ -2,6 +2,11 @@
 A lightweight AI-powered text processing web application built with Python, FastAPI, HTML, CSS, and JavaScript.
 The application provides a collection of focused text-processing tools powered by a large language model.
 
+## Demo
+
+![AI Text Processor Demo](docs/gifs/AI-Text-Processor-Demo.gif)
+
+
 ## Features
 ### Dictionary
 Look up a word or phrase and receive:
@@ -110,6 +115,30 @@ http://127.0.0.1:8000/docs
 uv run pytest
 ```
 
+## Screenshots
+
+### Dictionary
+
+![Dictionary](docs/images/2-Dictionary.png)
+
+### Grammar Fix
+
+![Grammar Fix](docs/images/3-GrammarFix.png)
+
+![Grammar Fix Suggestions](docs/images/3b-GrammarFix-PopUp.png)
+
+### Summarizer
+
+![Summarizer](docs/images/4-Summarizer.png)
+
+### Merge Text
+
+![Merge Text](docs/images/5-MergeText.png)
+
+### Translator
+
+![Translator](docs/images/6-Translator.png)
+
 
 ## Project Structure
 ```text
@@ -144,17 +173,58 @@ AI-Text-Processor/
 │   │
 │   ├── static/
 │   │   ├── css/
+│   │   │   └── styles.css
+│   │   │
 │   │   ├── html/
+│   │   │   ├── dictionary.html
+│   │   │   ├── grammar-fix.html
+│   │   │   ├── summarizer.html
+│   │   │   ├── text-merge.html
+│   │   │   ├── translator.html
+│   │   │   └── welcome.html
+│   │   │
 │   │   └── js/
+│   │       ├── dictionary.js
+│   │       ├── grammar-fix.js
+│   │       ├── language_list.js
+│   │       ├── main.js
+│   │       ├── summarizer.js
+│   │       ├── text-merge.js
+│   │       └── translator.js
 │   │
 │   ├── templates/
 │   │   └── index.html
 │   │
 │   └── main.py
 │
+├── docs/
+│   ├── gifs/
+│   │   └── AI-Text-Processor-Demo.gif
+│   │
+│   └── images/
+│       ├── 1-WelcomePage.png
+│       ├── 2-Dictionary.png
+│       ├── 3-GrammarFix.png
+│       ├── 3b-GrammarFix-PopUp.png
+│       ├── 4-Summarizer.png
+│       ├── 5-MergeText.png
+│       └── 6-Translator.png
+│
 ├── tests/
+│   ├── test_dictionary_api.py
+│   ├── test_dictionary_service.py
+│   ├── test_grammar_fix_api.py
+│   ├── test_grammar_fix_service.py
+│   ├── test_summarizer_api.py
+│   ├── test_summarizer_service.py
+│   ├── test_text_merge_api.py
+│   ├── test_text_merge_service.py
+│   ├── test_translator_api.py
+│   └── test_translator_service.py
+│
 ├── .env.example
 ├── .gitignore
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
+```
