@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Text Processor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+    <div class="app-shell">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h1>
+                    <a href="/" class="sidebar-brand-link">
+                        AI Text Processor
+                    </a>
+                </h1>
+            </div>
+            <nav class="sidebar-nav">
+
+                <!-- Dictionary Section -->
+                <button class="nav-item inactive" type="button" data-tool="dictionary">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        class="nav-icon" >
+                        <rect x="4" y="4" width="11" height="11" rx="2"></rect>
+                        <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                    </svg>
+                    <span>Dictionary</span>
+                </button>
+
+                <!-- Grammar Check Section -->
+                <button class="nav-item inactive" type="button" data-tool="grammar-fix">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        class="nav-icon" >
+                        <rect x="4" y="4" width="11" height="11" rx="2"></rect>
+                        <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                    </svg>
+                    <span>Grammar Fix</span>
+                </button>
+
+                <!-- Summarizer Section -->
+                <button class="nav-item inactive" type="button" data-tool="summarizer">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        class="nav-icon" >
+                        <rect x="4" y="4" width="11" height="11" rx="2"></rect>
+                        <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                    </svg>
+                    <span>Summarize Text</span>
+                </button>
+
+                <!-- Text Merge Section -->
+                <button class="nav-item inactive" type="button" data-tool="text-merge">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        class="nav-icon" >
+                        <rect x="4" y="4" width="11" height="11" rx="2"></rect>
+                        <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                    </svg>
+                    <span>Merge Text</span>
+                </button>
+
+                <!-- Translator Section -->
+                <button class="nav-item inactive" type="button" data-tool="translator">
+                    <svg
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                        class="nav-icon">
+                        <rect x="4" y="4" width="11" height="11" rx="2"></rect>
+                        <rect x="9" y="9" width="11" height="11" rx="2"></rect>
+                    </svg>
+                    <span>Translator</span>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Workspace -->
+        <main class="workspace">
+            <div id="workspace-container"></div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/diff@9.0.0/dist/diff.min.js"></script>
+    <script src="/static/js/language_list.js"></script>
+    <script src="/static/js/main.js"></script>
+
+</body>
+
+</html>

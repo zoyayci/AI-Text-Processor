@@ -1,0 +1,141 @@
+<section class="workspace-content">
+    <header class="page-header">
+        <h2>Merge Text</h2>
+        <p>
+            Combine multiple text inputs into a single cohesive output.
+        </p>
+    </header>
+
+    <div class="divider"></div>
+
+    <!-- Input section -->
+    <section class="input-section">
+        <h3>Input texts</h3>
+
+        <!-- Text 1 -->
+        <div class="text-block">
+            <div class="text-block-header">
+                <label for="text-1">Text 1</label>
+
+                <button
+                    class="delete-button"
+                    type="button"
+                    aria-label="Delete text 1"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16"></path>
+                        <path d="M9 7V4h6v3"></path>
+                        <path d="M7 7l1 13h8l1-13"></path>
+                        <path d="M10 11v5"></path>
+                        <path d="M14 11v5"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <textarea
+                id="text-1"
+                class="text-input"
+                placeholder="Enter text 1..."
+            ></textarea>
+        </div>
+
+        <!-- Text 2 -->
+        <div class="text-block">
+            <div class="text-block-header">
+                <label for="text-2">Text 2</label>
+
+                <button
+                    class="delete-button"
+                    type="button"
+                    aria-label="Delete text 2"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M4 7h16"></path>
+                        <path d="M9 7V4h6v3"></path>
+                        <path d="M7 7l1 13h8l1-13"></path>
+                        <path d="M10 11v5"></path>
+                        <path d="M14 11v5"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <textarea
+                id="text-2"
+                class="text-input"
+                placeholder="Enter text 2..."
+            ></textarea>
+        </div>
+
+        <!-- Actions -->
+        <div class="action-row">
+            <button
+                id="add-text-button"
+                class="secondary-button"
+                type="button"
+                data-tooltip="Maximum 5 texts are allowed"
+            >
+                <span class="plus-icon">+</span>
+                Add text
+            </button>
+
+            <button
+                id="merge-button"
+                class="primary-button"
+                type="button"
+            >
+                Merge texts
+            </button>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Result -->
+    <section class="result-section">
+        <div class="result-header">
+            <h3>Result</h3>
+
+            <div class="result-actions">
+                <button
+                    id="copy-result-button"
+                    class="result-action-button"
+                    type="button"
+                    aria-label="Copy result"
+                    title="Copy"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect
+                            x="9"
+                            y="9"
+                            width="11"
+                            height="11"
+                            rx="2"
+                        ></rect>
+                        <path
+                            d="M15 9V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3"
+                        ></path>
+                    </svg>
+                </button>
+
+                <button
+                    id="download-result-button"
+                    class="result-action-button"
+                    type="button"
+                    aria-label="Download result"
+                    title="Download .txt"
+                >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 3v12"></path>
+                        <path d="M7 10l5 5 5-5"></path>
+                        <path d="M5 21h14"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div
+            id="result"
+            class="result-box"
+        ></div>
+    </section>
+</section>
