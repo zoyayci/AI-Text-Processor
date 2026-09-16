@@ -125,7 +125,7 @@ uv run pytest
 
 ![Grammar Fix](docs/images/3-GrammarFix.png)
 
-![Grammar Fix Suggestions](docs/images/3b-GrammarFix-PopUp.png)
+![Grammar Fix](docs/images/3b-GrammarFix-PopUp.png)
 
 ### Summarizer
 
