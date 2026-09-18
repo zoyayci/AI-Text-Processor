@@ -85,8 +85,8 @@ Copy-Item .env.example .env
 
 Then configure the environment variables:
 ```env
-LLM_API_KEY=your_api_key_here
-LLM_MODEL=your_model_name
+LLM_API_KEY=
+LLM_MODEL=
 ```
 
 `LLM_API_BASE` is optional.
