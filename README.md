@@ -65,12 +65,17 @@ git clone https://github.com/zoyayci/AI-Text-Processor.git
 cd AI-Text-Processor
 ```
 
-### 2. Install dependencies
+### 2. Create a Python environment
+```bash
+uv venv --python 3.14
+```
+
+### 3. Install dependencies
 ```bash
 uv sync
 ```
 
-### 3. Configure environment variables
+### 4. Configure environment variables
 Create a `.env` file from `.env.example`.
 
 Linux/macOS:
@@ -92,7 +97,7 @@ LLM_MODEL=
 `LLM_API_BASE` is optional.
 The `.env` file is ignored by Git and should not be committed.
 
-### 4. Run the application
+### 5. Run the application
 
 ```bash
 uv run uvicorn app.main:app --reload
@@ -110,7 +115,7 @@ FastAPI documentation is available at:
 http://127.0.0.1:8000/docs
 ```
 
-### 5. Run the tests
+### 6. Run the tests
 ```bash
 uv run pytest
 ```
